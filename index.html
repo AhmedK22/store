@@ -1,0 +1,59 @@
+
+<html >
+<head>
+   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/indexstyle.css" rel="stylefheet">
+</head>
+<body>
+
+   <!-- <button id="demo">hello</button>-->
+    
+    
+        <div class="container py-5">
+    
+        <label>productname:</label>
+        <input type="text" id="productinputname" class="form-control my-2 ">
+       
+        <label  >productprice:</label>
+        <input type="number" id="productinputprice"  class="form-control  my-2">
+       
+
+        <label  >productcategory:</label>
+        <input type="text" id="productinputcategory"  class="form-control  my-2">
+       
+       
+        <label  >productdesc:</label>
+        <textarea id="productinputdesc" class="form-control  my-2 "></textarea>
+
+        <button  onclick="addproduct()" id="btnnn"  class="btn-info my-4 d-block">addproducts</button>
+
+
+        <div class="w-50 m-auto py-5">
+        <input onkeyup="searchh(this.value)" type="text" id="search" class="form-control">
+
+       </div>
+
+        <table class="w-100">
+            <thead class="headofbody">
+                <th>index</th>
+                <th>name</th>
+                <th>price</th>
+                <th>category</th>
+                <th>desc</th>
+                <th>delete</th>
+                <th>update</th>
+              </thead>
+              <tbody id="elbody"></tbody>
+
+
+
+
+
+        </table>
+
+    </div> 
+    
+  <script src="first.js"></script>
+</body>
+</html>
